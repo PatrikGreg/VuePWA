@@ -31,17 +31,35 @@
               <label class="mdl-textfield__label" for="sample3">Email</label>
               <span class="mdl-textfield__error">Invalid email adress</span>
             </div>
-            <div id="dropdown">
-               <!-- Select with floating label and arrow -->
-               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
-                   <input type="text" value="" class="mdl-textfield__input" id="boatTypes" readonly/>
-                   <input id="boatType" type="hidden" value="" name="boatTypes"/>
-                   <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
-                   <label for="boatTypes" class="mdl-textfield__label">Boat Type</label>
-                   <ul id ="dropdownList" for="boatTypes" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-                   </ul>
-               </div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+            <input type="text" value="" class="mdl-textfield__input" id="sample4" readonly>
+            <input id="boatType" type="hidden" value="" name="sample4">
+            <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+              <label for="sample4" class="mdl-textfield__label">Boat Type</label>
+              <ul for="sample4" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                  <li class="mdl-menu__item" data-val="Samogon, Lagoon 450 Flybridge">Samogon, Lagoon 450 Flybridge</li>
+                  <li class="mdl-menu__item" data-val="Madagascar, Lagoon 450">Madagascar, Lagoon 450</li>
+                  <li class="mdl-menu__item" data-val="Galapagos, Lagoon 42">Galapagos, Lagoon 42</li>
+                  <li class="mdl-menu__item" data-val="Greenland, Lagoon 400">Greenland, Lagoon 400</li>
+                  <li class="mdl-menu__item" data-val="Mississippi, Oceanis 50 Family">Mississippi, Oceanis 50 Family</li>
+                  <li class="mdl-menu__item" data-val="Ganges, Oceanis 50 Family">Ganges, Oceanis 50 Family</li>
+                  <li class="mdl-menu__item" data-val="Orinoco, Beneteau Cyclades 50.5">Orinoco, Beneteau Cyclades 50.5</li>
+                  <li class="mdl-menu__item" data-val="Odessa, Sun Odyssey 449">Odessa, Sun Odyssey 449</li>
+                  <li class="mdl-menu__item" data-val="Royal, Sun Odyssey 449">Port Royal, Sun Odyssey 449</li>
+                  <li class="mdl-menu__item" data-val="Tortuga, Sun Odyssey 449">Tortuga, Sun Odyssey 449</li>
+                  <li class="mdl-menu__item" data-val="Himalaya, Beneteau Cyclades 43.4">Himalaya, Beneteau Cyclades 43.4</li>
+                  <li class="mdl-menu__item" data-val="Niagara, Beneteau Cyclades 43.4">Niagara, Beneteau Cyclades 43.4</li>
+                  <li class="mdl-menu__item" data-val="Tigris, Beneteau Cyclades 43.4">Tigris, Beneteau Cyclades 43.4</li>
+                  <li class="mdl-menu__item" data-val="Goa, Beneteau Oceanis 41.1">Goa, Beneteau Oceanis 41.1</li>
+                  <li class="mdl-menu__item" data-val="Pharos, Beneteau Cyclades 39.3">Pharos, Beneteau Cyclades 39.3</li>
+                  <li class="mdl-menu__item" data-val="Sahara, Beneteau Cyclades 39.3">Sahara, Beneteau Cyclades 39.3</li>
+                  <li class="mdl-menu__item" data-val="Patagonia, Beneteau Cyclades 39.3">Patagonia, Beneteau Cyclades 39.3</li>
+                  <li class="mdl-menu__item" data-val="Alaska, Beneteau Cyclades 39.3">Alaska, Beneteau Cyclades 39.3</li>
+                  <li class="mdl-menu__item" data-val="Siberia, Sun Odyssey 349">Siberia, Sun Odyssey 349</li>
+                  <li class="mdl-menu__item" data-val="Panonia, Sun Odyssey 349">Panonia, Sun Odyssey 349</li>
+              </ul>
             </div>
+            <!--<mdl-select style="margin-top: 1em;" label="Boat Type" id="boatType" v-model="this.placeholderBoat" :options="this.boatType"></mdl-select>-->
             <div id="datePicker">
               <vue-hotel-datepicker
                :startDate="new Date(new Date().getFullYear(),0,1)">
@@ -168,6 +186,7 @@
 </style>
 
 <script>
+export default {}
 window.onload = function (){
   
   console.log("window.onload log");

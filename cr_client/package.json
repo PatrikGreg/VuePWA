@@ -17,6 +17,7 @@
     "vue": "^2.5.2",
     "vue-country-flag": "^1.2.3",
     "vue-hotel-datepicker": "^2.6.4",
+    "vue-mdl": "^1.1.1",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

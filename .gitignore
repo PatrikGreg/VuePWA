@@ -27,8 +27,6 @@ cr_api/.vs/
 cr_api/cr_api_service/bin/
 
 ###cr_client###
-#node_modules folder except getmdl-select
-cr_client/node_modules/*
-!cr_client/node_modules/getmdl-select
+cr_client/node_modules/
 #dist folder
 cr_client/dist/
